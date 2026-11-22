@@ -1,0 +1,38 @@
+# Data, indeks, dan model: besar, dibuat ulang dengan download_miracl.py / build_index.py / finetune_e5.py
+data/
+indexes/
+models/
+
+# Laporan, slide, dan panduan tidak diunggah
+laporan/
+
+# Keluaran eksperimen yang besar (CSV/JSON/report.md tetap diunggah)
+outputs/candidates.pkl
+outputs/runs/
+outputs/ft/runs/
+outputs/ft/candidates.pkl
+outputs/full_bm25/
+outputs/sub50k/
+outputs/sub50k_bm25/
+*.log
+
+# Python, Jupyter, editor
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+.idea/
+
+# Node (pembuat slide)
+node_modules/
+
+# File sementara Office dan sistem
+~$*
+*.tmp.docx
+.DS_Store
+Thumbs.db
+
+# Dokumen proposal dan template
+/*.pdf
+/*.docx

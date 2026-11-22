@@ -1,0 +1,62 @@
+{
+  "python": "3.14.7",
+  "os": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "torch": "2.11.0+cu128",
+    "sentence-transformers": "6.3.0",
+    "transformers": "5.23.0",
+    "PySastrawi": "1.2.1",
+    "streamlit": "1.67.0"
+  },
+  "model": "C:\\tugas\\TKI\\models\\e5-base-miracl-id",
+  "device": "cuda",
+  "seed": 42,
+  "K": 100,
+  "eval_depth": 100,
+  "bm25": {
+    "stopwords": "PySastrawi",
+    "n_stopwords": 809,
+    "idf": "ln(1 + (N - n_t + 0.5)/(n_t + 0.5))",
+    "stem": false,
+    "n_docs": 1446315,
+    "n_terms": 916224,
+    "avgdl": 31.79270362854004,
+    "k1": 0.9,
+    "b": 0.2
+  },
+  "bm25_stem": {
+    "stopwords": "PySastrawi",
+    "n_stopwords": 809,
+    "idf": "ln(1 + (N - n_t + 0.5)/(n_t + 0.5))",
+    "stem": true,
+    "stemmer": "PySastrawi",
+    "n_docs": 1446315,
+    "n_terms": 837336,
+    "avgdl": 31.79270362854004,
+    "k1": 0.6,
+    "b": 0.3
+  },
+  "n_docs": 1446315,
+  "data_dir": "C:\\tugas\\TKI\\data\\miracl-id",
+  "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU",
+  "best_params": {
+    "linear": {
+      "alpha": 0.6
+    },
+    "rrf": {
+      "rrf_k": 5
+    },
+    "linear+stem": {
+      "alpha": 0.6
+    },
+    "rrf+stem": {
+      "rrf_k": 10
+    }
+  },
+  "n_tune": 480,
+  "n_test": 480
+}

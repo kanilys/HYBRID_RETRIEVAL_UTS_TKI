@@ -1,0 +1,10 @@
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+tqdm>=4.66
+PySastrawi>=1.2.0
+sentence-transformers>=3.0
+torch>=2.2
+huggingface_hub>=0.23
+streamlit>=1.35
+pytest>=8.0
